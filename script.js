@@ -11,7 +11,7 @@ for(const button of buttons) {
         const clickedOnNumber = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "."].includes(e.target.textContent);
         const clickedOnOperater = ["/", "*", "-", "+", "%"].includes(e.target.textContent);
 
-        if(e.target.textContent === "+/-"  && display.textContent !== "NaN") {
+        if(e.target.textContent === "+/-"  && !["NaN", "0"].includes(display.textContent)) {
             if(value2 === "" && !(value1.includes("-"))) {
                 const newValue = "-" + value1;
                 value1 = newValue;
