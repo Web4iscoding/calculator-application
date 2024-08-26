@@ -1,0 +1,71 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 30%;
+    border: 8px solid rgb(51, 51, 51);;
+    background-color: black;
+}
+
+.upper {
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 12px;
+    padding-bottom: 3px;
+    font-size: 60px;
+    color: white;
+}
+
+.lower {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+
+
+.one {
+    flex: 1;
+}
+
+.two {
+    flex: 2.022;
+}
+
+.one, .two {
+    overflow: hidden;
+    border: 2px solid black;
+    color: white;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    background-color: rgb(51, 51, 51);
+}
+
+.operator {
+    background-color: orange;
+}
+
+.other {
+    background-color: gray;
+}
